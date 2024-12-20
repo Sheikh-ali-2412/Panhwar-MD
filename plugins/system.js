@@ -12,17 +12,26 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-let status = `*╭──────────●●►*
-*𝐏𝐀𝐍𝐇𝐖𝐀𝐑 𝐔𝐏𝐓𝐈𝐌𝐄 𝐋𝐈𝐒𝐓↷*
+let status = `
+*[ •  SHEIKH-ALI-MD - UPTIME ‎ • ]*
+*╭┈───────────────•*
+*│  ◦* *_UPTIME:➠_*
+*│  ◦* ${runtime(process.uptime())}
+*│  ◦*
+*│  ◦* *_RAM USAGE:➠_*
+*│  ◦* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+*│  ◦*
+*│  ◦* *_HOSTNAME:➠_*
+*│  ◦* ${os.hostname()}
+*│  ◦*
+*│  ◦* *_PLATFORM:➠_*
+*│  ◦* ${process.env.DYNO ? "Heroku" : "Localhost"}
+*│  ◦*
+*╰┈───────────────•*
 
-*_𝐔𝐏𝐓𝐈𝐌𝐄:➠_*  ${𝐫𝐮𝐧𝐭𝐢𝐦𝐞(process.uptime())}
-
-*_𝐑𝐀𝐌 𝐔𝐒𝐀𝐆𝐄:➠_* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-
-*_𝐇𝐎𝐒𝐓𝐍𝐀𝐌𝐄:➠_* ${𝐨𝐬.𝐡𝐨𝐬𝐭𝐧𝐚𝐦𝐞()}
-
-*_𝐎𝐖𝐍𝐄𝐑:➠_* *𝐀𝐍𝐒𝐀𝐑*
-*╰──────────●●►*
+*•────────────•⟢*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼
+*•────────────•⟢*
 `
 await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:`${status}`},{quoted:mek})
 

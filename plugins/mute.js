@@ -17,11 +17,11 @@ if (!isOwner || !isAdmins) return;
 if (!m.isGroup) return reply(mg.onlygroup);
 if (!isBotAdmins) return reply(mg.needbotadmins);     
             await conn.groupSettingUpdate(m.chat, "announcement")
-           const mass = await conn.sendMessage(m.chat, { text: '*GROUP CHAT MUTED BY PANHWAR MD* 🔒' }, { quoted: mek });
+           const mass = await conn.sendMessage(m.chat, { text: '*GROUP CHAT MUTED BY SHEIKH-ALI-MD* 🔒' }, { quoted: mek });
             return await conn.sendMessage(m.chat, { react: { text: '🔒', key: mass.key } });
 } catch(e) {
 console.log(e);
-reply('*PLEASE GIVE ME A ADDMIN ROLE❗👻*')    
+reply('*PLEASE GIVE ME A ADMIN ROLE❗👻*')    
 } 
 })
 
@@ -42,11 +42,11 @@ if (!isOwner || !isAdmins) return;
 if (!m.isGroup) return reply(mg.onlygroup);
 if (!isBotAdmins) return reply(mg.needbotadmins);     
             await conn.groupSettingUpdate(m.chat, "not_announcement")
-           const mass = await conn.sendMessage(m.chat, { text: '*GROUP CHAT UNMUTED BY PANHWAR MD* 🔒' }, { quoted: mek });
+           const mass = await conn.sendMessage(m.chat, { text: '*GROUP CHAT UNMUTED BY SHEIKH-ALI-MD* 🔒' }, { quoted: mek });
             return await conn.sendMessage(m.chat, { react: { text: '🔒', key: mass.key } });
 } catch(e) {
 console.log(e);
-reply('*PLEASE GIVE ME A ADDMIN ROLE❗👻*')    
+reply('*PLEASE GIVE ME A ADMIN ROLE❗👻*')    
 } 
 })
 

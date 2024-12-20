@@ -11,18 +11,24 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let repo =`
-*╭──────────────●●►*
-> *BOT OWNER:*
-*|* *ANSAR PANHWAR*
+*[ •  B O T - O W N E R ‎ • ]*
+*╭┈───────────────•*
+*│  ◦* * 𝐀𝐋𝐈 𝐀𝐇𝐌𝐀𝐃•••²⁴⁰⁶*
+*╰┈───────────────•*
 
-> *PANHWAR MD REPO:*
-*|* *https://github.com/Panhwar110/Panhwar-MD*
+*[ •  SHEIKH-ALI--MD - REPO ‎ • ]*
+*╭┈───────────────•*
+*│  ◦* *https://github.com/Sheikh-ali-2412/SHEIKH-ALI-MD*
+*╰┈───────────────•*
 
-> *SUPPORT CHANNEL:*
-*|* *https://whatsapp.com/channel/0029ValASu1IN9ifummBKW1U*
-*╰──────────────●●►*
+*[ •  SUPPORT - GROUP‎ • ]*
+*╭┈───────────────•*
+*│  ◦* *https://whatsapp.com/channel/0029Vao1lnR1nozDF8jBNh3B*
+*╰┈───────────────•*
 
-> *🇵🇰PANHWAR-MD*
+*•────────────•⟢*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𓄂𝕚𝕥𝕩.𝑺𝑯𝑬𝑰𝑲𝑯 𝑨𝑳𝑰 🔥༽༼
+*•────────────•⟢*
 `
 await conn.sendMessage(from, { text: repo ,
   contextInfo: {
@@ -32,15 +38,15 @@ await conn.sendMessage(from, { text: repo ,
     isForwarded: false,
     forwardedNewsletterMessageInfo: {
       newsletterJid: '12036323288171807@newsletter',
-      newsletterName: "UMAR",
+      newsletterName: "ALIAHMAD2406",
       serverMessageId: 999
     },
 externalAdReply: { 
-title: 'PANHWAR MD',
+title: 'SHEIKH-ALI-MD',
 body: `${pushname}`,
 mediaType: 1,
-sourceUrl: "https://github.com/Panhwar110/Panhwar-MD" ,
-thumbnailUrl: "https://i.ibb.co/7NKFsxS/IMG-20241119-WA0087.jpg" ,
+sourceUrl: "https://github.com/Sheikh-ali-2412/SHEIKH-ALI-MD" ,
+thumbnailUrl: "https://i.ibb.co/KFYzSLs/Picsart-24-11-23-16-00-15-845.jpg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
